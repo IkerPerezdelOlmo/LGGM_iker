@@ -2,3 +2,4 @@ Pipfile
 Large-Graph-Generative-Model/graphsseed/
 Large-Graph-Generative-Model/emaitzak/
 Large-Graph-Generative-Model/outputs/
+.gitignore
