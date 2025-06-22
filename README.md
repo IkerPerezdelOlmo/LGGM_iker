@@ -41,7 +41,7 @@ Navigate to the ./src/analysis/orca directory and compile orca.cpp:
 g++ -O2 -std=c++11 -o orca orca.cpp
 ```
 
-## Dataset
+## Original Dataset
 ```
 https://huggingface.co/datasets/YuWang0103/LGGM/tree/main
 ```
