@@ -53,105 +53,44 @@ cd src
 ```
 
 
-# Marginal Setting
-
-## Pre-training: Train on QM9Topo and evaluate on all other domains, Training on {Domain} and Evaluate on all wo {Domain}
-```
-bash run_train_seed_marginal.sh
 
 
-bash run_test_seed_marginal.sh
-bash run_test_qm9topo_others_seed_marginal.sh
+## Pre-training of the models 
 ```
-
-## Fine-tuning: Fine-tune from pre-trained model on {Domain} and Evaluate on {Domain}
-```
-bash run_train_ft_seed_marginal.sh
-bash run_train_qm9topo_ft_seed_marginal.sh
-
-bash run_test_ft_seed_marginal.sh
-bash run_test_qm9topo_ft_seed_marginal.sh
-```
-
-## Training from Scratch: Trai and Evaluate model trained on {Domain} and tested on {Domain}
-```
-run_train_seed_marginal_direct.sh
-run_test_seed_marginal_direct.sh
-```
-
-## Evaluation Diffusion model trained on qm9 and tested on qm9
-```
-run_test_qm9topo_qm9topo_seed_marginal.sh
+iker_run_train_uniform_all_plus3.sh
+iker_run_train_uniform_all.sh
 ```
 
 
-## Sensitive Analysis over number of graphs during Fine-tuning and Training from Scratch 
+## Fine-tuning
 ```
-run_train_ft_marginal_analysis.sh
-run_test_ft_marginal_analysis.sh
-
-
-bash run_train_seed_marginal_direct_analysis.sh
-bash run_test_seed_marginal_direct_analysis.sh
+iker_run_train_ft_seed_uniform_erdos-renyi_plus3.sh
+iker_run_train_ft_seed_uniform_erdos-renyi.sh
+iker_run_train_ft_seed_uniform_InternetTopology_plus3.sh
+iker_run_train_ft_seed_uniform_InternetTopology.sh
+iker_run_train_ft_seed_uniform_USA-road_plus3.sh
+iker_run_train_ft_seed_uniform_USA-road.sh
 ```
 
 
-## Training Diffusion Models on All Domain Setting
+## Testing
 ```
-bash run_train_marginal_all.sh
-bash run_test_marginal_all.sh
+iker_run_test_all_bare_2.sh
+iker_run_test_all_bare.sh
+iker_run_test_all_plus3_2.sh
+iker_run_test_all_plus3.sh
+iker_run_test_uniform_all.sh
+iker_run_test_uniform_erdos-renyi.sh
+iker_run_test_uniform_erdos-renyi.sh
+iker_run_test_uniform_erdos-renyi.sh
+iker_run_test_uniform_InternetTopology.sh
+iker_run_test_uniform_USA-road.sh
 ```
 
 
 
-# Uniform Setting
-
-## Pre-training: Train on QM9Topo and evaluate on all other domains, Train on {Domain} and Evaluate on all wo {Domain}
-```
-bash run_train_seed_uniform.sh
 
 
-bash run_test_seed_uniform.sh
-bash run_test_qm9topo_others_seed_uniform.sh
-```
-
-## Fine-tuning: Fine-tune from pre-trained model on {Domain} and Evaluate on {Domain}
-```
-bash run_train_ft_seed_uniform.sh
-bash run_train_qm9topo_ft_seed_uniform.sh
-
-bash run_test_ft_seed_uniform.sh
-bash run_test_qm9topo_ft_seed_uniform.sh
-```
-
-## Train from Scratch: Train and evaluate Diffusion model trained on {Domain} and tested on {Domain}
-```
-run_train_seed_uniform_direct.sh
-run_test_seed_uniform_direct.sh
-```
-
-## Evaluation Diffusion model trained on qm9 and tested on qm9
-```
-run_test_qm9topo_qm9topo_seed_uniform.sh
-```
-
-
-## Sensitive Analysis over number of graphs for Fine-tune and Train from Scratch
-```
-run_train_ft_uniform_analysis.sh
-run_test_ft_uniform_analysis.sh
-
-
-bash run_train_seed_uniform_direct_analysis.sh
-bash run_test_seed_uniform_direct_analysis.sh
-```
-
-
-## Training Diffusion Models on All Domain Setting
-```
-bash run_train_uniform_all.sh
-bash run_test_uniform_all.sh
-```
 
 
 
